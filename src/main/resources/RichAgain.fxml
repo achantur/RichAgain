@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane prefHeight="250" prefWidth="250" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="RichAgain">
+    <children>
+        <Label fx:id="diamondsLabel" text="Diamonds: " layoutX="10" layoutY="10"/>
+        <Spinner fx:id="diamonds" layoutX="80" layoutY="10" prefHeight="26.0" prefWidth="160" editable="true"
+                 valueFactory="diamondsFactory">
+            <valueFactory>
+                <SpinnerValueFactory.IntegerSpinnerValueFactory min="0" max="9999" initialValue="9999"/>
+            </valueFactory>
+        </Spinner>
+        <Label fx:id="creditsLabel" text="Credits: " layoutX="10" layoutY="60"/>
+        <Spinner fx:id="credits" layoutX="80" layoutY="60" prefHeight="26.0" prefWidth="160" editable="true"
+                 valueFactory="creditsFactory">
+            <valueFactory>
+                <SpinnerValueFactory.IntegerSpinnerValueFactory min="0" max="9999" initialValue="9999"/>
+            </valueFactory>
+        </Spinner>
+        <Label fx:id="ducketsLabel" text="Duckets: " layoutX="10" layoutY="110"/>
+        <Spinner fx:id="duckets" layoutX="80" layoutY="110" prefHeight="26.0" prefWidth="160" editable="true"
+                 valueFactory="ducketsFactory">
+            <valueFactory>
+                <SpinnerValueFactory.IntegerSpinnerValueFactory min="0" max="9999" initialValue="9999"/>
+            </valueFactory>
+        </Spinner>
+        <Label fx:id="hcLabel" text="Habbo Club: " layoutX="10" layoutY="160"/>
+        <Spinner fx:id="hc" layoutX="80" layoutY="160" prefHeight="26.0" prefWidth="160" editable="true"
+                 valueFactory="hcFactory">
+            <valueFactory>
+                <SpinnerValueFactory.IntegerSpinnerValueFactory min="0" max="3649800" initialValue="3649800"/>
+            </valueFactory>
+        </Spinner>
+        <Button fx:id="generate" layoutX="10" layoutY="210" prefHeight="26.0" prefWidth="100" text="Generate"/>
+        <Button fx:id="reset" layoutX="120" layoutY="210" prefHeight="26.0" prefWidth="100" text="Reset"/>
+    </children>
+</AnchorPane>
